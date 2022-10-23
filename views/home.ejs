@@ -1,0 +1,29 @@
+<div id="card" class="card shadow">
+  <div class="card-body">
+<form method="POST" action="/register"class="row g-3 mr-2 ml-2 d-flex justify-content-center mx-auto needs-validation">
+  <p class="d-flex justify-content-center mb-0">Create your profile link</p>
+  <div class="col-auto mt-1 was-validation">
+    <label class="visually-hidden">userLink</label>
+    <input formmethod="post" type="text" class="form-control shadow-none" id="inputPassword2" placeholder="Insert your Nickname" name="nickname" required>
+   </div>
+  <div class="col-auto mt-2">
+     <button style="background-color:#287d74" type="submit" class="btn mb-3 text-white"><a class="text-white text-decoration-none">
+      <i class="bi bi-person-fill"></i>Create profile link</button></a>
+  </div>
+ </form>
+ </div>
+ </div>
+
+
+<style>
+input[type=text] {
+  text-align: center;
+}
+ input[type=text]:focus {
+    border: 2px solid #4b8182;
+}
+#card {
+  position: center;
+ 
+}
+</style>

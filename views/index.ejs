@@ -1,0 +1,41 @@
+<div class="user d-flex justify-content-center mt-2 pt-2">
+  <h5>Hello, <%= nickname %></h5>
+</div>
+
+<form class="row g-3 mr-2 ml-2 d-flex justify-content-center mx-auto">
+  <p class="d-flex justify-content-center mb-0">This your profile link</p>
+  <div class="col-auto mt-1">
+    <label for="inputPassword2" class="visually-hidden">userLink</label>
+    <input type="text" value="http://localhost"class="form-control" id="inputPassword2" placeholder="Url" disabled readonly>
+  </div>
+  <div class="col-auto mt-1">
+    <button style="background-color:#287d74"type="button" class="btn mb-3 text-white"><a href="/about?id=12345" class="text-white">
+      <i class="bi bi-link-45deg"></i></button></a>
+  </div>
+</form>
+<div class="d-grid gap-2 d-md-flex justify-content-md-end mx-auto">
+  <h4 class="d-flex justify-content-center">Share your link</h4>
+  <button id="btn-wa" class="btn btn-success btn-lg me-md-2" type="button">
+    <i class="bi bi-whatsapp"></i>
+      Share to Whatsapp
+  </button>
+  <button id="btn-ig" class="btn btn-danger btn-lg" type="button">
+    <i class="bi bi-instagram"></i>
+    Share to instagram
+  </button>
+</div>
+  </div>
+
+<style>
+#btn-wa{
+  background-color: #40b827;
+  border: none;
+}
+#btn-wa:active {
+  background-color: #358730;
+}
+#btn-ig{background: linear-gradient(90deg, rgb(233,91,56) 0%, rgb(255,113,56) 35%, rgb(241,164,43) 100%);}
+#btn-ig:active{background:linear-gradient(90deg, rgb(135,75,34) 0%, rgb(177,86,42) 35%, rgb(139,108,25)100%);}
+#btn-ig{border: none;}
+
+  </style>

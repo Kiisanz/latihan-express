@@ -1,6 +1,6 @@
-import userModel from "./user-model.js"
-const model = {}
+import postsModel from "./posts-model.js";
 
-model.user = userModel
+const model = {};
+model.post = postsModel;
 
-export default model
+export default model;

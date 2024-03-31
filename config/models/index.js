@@ -1,6 +1,13 @@
-import postsModel from "./posts-model.js";
+import PostModel from "./PostModel.js"
+import UserModel from "./UserModel.js"
 
-const model = {};
-model.post = postsModel;
+const model = {}
+model.Post = PostModel
+model.User = UserModel
 
-export default model;
+model.User.hasMany(model.Post, {
+  foreignKey: "userId",
+})
+model.Post.belongsTo(model.User)
+
+export default model

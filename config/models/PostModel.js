@@ -8,14 +8,27 @@ const posts = db.define(
       type: DataTypes.INTEGER,
       primaryKey: true,
     },
-    title: DataTypes.STRING,
-    slug: DataTypes.STRING,
-    author: DataTypes.STRING,
-    desc: DataTypes.TEXT,
-    content: DataTypes.TEXT,
-    url_img: DataTypes.STRING,
-    category: DataTypes.STRING,
-    likes: DataTypes.INTEGER,
+    title: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    slug: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+    },
+    desc: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+    },
+    content: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+    },
+    url_img: {
+      type: DataTypes.STRING,
+      isUrl: true,
+    },
     created_at: {
       type: DataTypes.DATEONLY,
       defaultValue: DataTypes.NOW,
